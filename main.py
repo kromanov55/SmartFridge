@@ -213,9 +213,6 @@ def main():
     st.button("Next", on_click=nextpage, disabled=(st.session_state.page > 3))
 
     if st.session_state.page == 0:
-        with placeholder:
-        # Replace the placeholder with some text:
-            placeholder.text(f"Hello, this is page {st.session_state.page}")
         food_list = ""
         model = YOLO("best.pt")
         nav = sac.steps(
