@@ -3,7 +3,6 @@ import requests
 import streamlit as st
 from ultralytics import YOLO
 import os
-from streamlit_option_menu import option_menu
 from translate import Translator
 import shutil
 import openai
